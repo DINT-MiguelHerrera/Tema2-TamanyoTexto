@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_TamanyoTexto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tamaño del Texto" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="textoCambiante" HorizontalAlignment="Center" Margin="0,125,0,0" TextWrapping="Wrap" Text="Desarrollo de Interfaces" VerticalAlignment="Top"/>
-        <RadioButton Content="Pequeño" HorizontalAlignment="Center" Margin="-200,285,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Mediano" HorizontalAlignment="Center" Margin="0,285,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Grande" HorizontalAlignment="Center" Margin="200,285,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textoCambiante" HorizontalAlignment="Center" Margin="0,46,0,0" TextWrapping="Wrap" Text="Desarrollo de Interfaces" VerticalAlignment="Top" Foreground="#FFFF4800" FontWeight="Bold" Width="720" Height="221" TextAlignment="Center" />
+        <RadioButton x:Name="botonPequeño" Content="Pequeño" HorizontalAlignment="Center" Margin="-200,285,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Tag="botonPequeño"/>
+        <RadioButton x:Name="botonMediano" Content="Mediano" HorizontalAlignment="Center" Margin="0,285,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Tag="botonMediano"/>
+        <RadioButton x:Name="botonGrande" Content="Grande" HorizontalAlignment="Center" Margin="200,285,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Tag="botonGrande"/>
 
     </Grid>
 </Window>

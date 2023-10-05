@@ -24,5 +24,22 @@ namespace Tema2_TamanyoTexto
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;  
+            switch(radioButton.Tag.ToString())
+            {
+                case "botonPequeño":
+                    textoCambiante.FontSize = 32;
+                    break;
+                case "botonMediano":
+                    textoCambiante.FontSize = 48;
+                    break;
+                case "botonGrande":
+                    textoCambiante.FontSize = 72;
+                    break;
+            }
+        }
     }
 }
